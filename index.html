@@ -14,91 +14,96 @@
 </head>
 <body>
     <div class="container mx-auto w-[1180px]">
-        <!------------------------- header section start ------------------------->
+        <div class="container-1">
+                <!------------------------- header section start ------------------------->
 
-        <header>
-            <!-- navbar section start -->
-        <div class="navbar bg-base-100 my-4">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <header>
+                <!-- navbar section start -->
+            <div class="navbar bg-base-100 my-4">
+                <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
+                <a class="btn btn-ghost text-xl">P-ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost text-xl">P-ticket</a>
+                </div>
+                <div class="navbar-end">
+                <a class="btn">Bus #</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                  <li><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Destination</a></li>
-                  <li><a>Search</a></li>
-              </ul>
+            <!-- navbar section end -->
+
+            <!-- banner section start -->
+            <div class="banner rounded-3xl my-6 flex justify-center items-center text-center bg-[url('/images/banner.png')] h-[580px] bg-no-repeat bg-contain ">
+                <div class="space-y-6 w-3/4 mx-auto">
+                    <h1 class="text-6xl text-white">End-to-End travel with</h1>
+                    <h1 class="text-6xl text-amber-400">P Paribahan</h1>
+                    <p class="text-lg text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <button id="btn-by-tickets" class="btn btn-warning">Buy Tickets</button>
+                </div>    
             </div>
-            <div class="navbar-end">
-              <a class="btn">Bus #</a>
+            <!-- banner section end -->
+            </header>
+
+            <!------------------------- header section end ------------------------->
+
+            <!-- -----------------------Offer section start---------------------------->
+            <section class="flex gap-4 justify-evenly">
+                
+                <div class="flex  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
+                    <div class="space-y-2">
+                        <h2 class="text-5xl font-bold">15% OFF</h2>
+                        <p class="text-lg">On your next purchase</p>
+                        <p class="text-sm text-gray-700">Use by January 2024</p>
+                    </div>
+                    <div class="">
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-4xl"> NEW15</h2>
+                        <p class="text-sm text-gray-600">Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="flex  justify-center items-center bg-[#FFC0CB]  text-black w-[500px] text-center rounded-2xl">
+                    <div class="space-y-2">
+                        <h2 class="text-5xl font-bold">20% OFF</h2>
+                        <p class="text-lg">On your next purchase</p>
+                        <p class="text-sm text-gray-700">Use by January 2024</p>
+                    </div>
+                    <div class="">
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-4xl"> Couple 20</h2>
+                        <p class="text-sm text-gray-600">Coupon Code</p>
+                    </div>
+                </div>
+            </section>
+            <div class="mx-auto flex justify-center items-center m-6">
+                <button class="btn btn-outline btn-warning">Warning</button>
             </div>
+            <!-- -----------------------Offer section end---------------------------->
         </div>
-        <!-- navbar section end -->
 
-        <!-- banner section start -->
-        <div class="banner rounded-3xl my-6 flex justify-center items-center text-center bg-[url('/images/banner.png')] h-[580px] bg-no-repeat bg-contain ">
-            <div class="space-y-6 w-3/4 mx-auto">
-                <h1 class="text-6xl text-white">End-to-End travel with</h1>
-                <h1 class="text-6xl text-amber-400">P Paribahan</h1>
-                <p class="text-lg text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button id="btn-by-tickets" class="btn btn-warning">Buy Tickets</button>
-            </div>    
-        </div>
-        <!-- banner section end -->
-        </header>
-
-        <!------------------------- header section end ------------------------->
-
-        <!-- -----------------------Offer section start---------------------------->
-        <section class="flex gap-4 justify-evenly">
-            
-            <div class="flex  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
-                <div class="space-y-2">
-                    <h2 class="text-5xl font-bold">15% OFF</h2>
-                    <p class="text-lg">On your next purchase</p>
-                    <p class="text-sm text-gray-700">Use by January 2024</p>
-                </div>
-                <div class="">
-                    <img src="images/cupon-devider.png" alt="">
-                </div>
-                <div class="space-y-2">
-                    <h2 class="text-4xl"> NEW15</h2>
-                    <p class="text-sm text-gray-600">Coupon Code</p>
-                </div>
-            </div>
-
-            <div class="flex  justify-center items-center bg-[#FFC0CB]  text-black w-[500px] text-center rounded-2xl">
-                <div class="space-y-2">
-                    <h2 class="text-5xl font-bold">20% OFF</h2>
-                    <p class="text-lg">On your next purchase</p>
-                    <p class="text-sm text-gray-700">Use by January 2024</p>
-                </div>
-                <div class="">
-                    <img src="images/cupon-devider.png" alt="">
-                </div>
-                <div class="space-y-2">
-                    <h2 class="text-4xl"> Couple 20</h2>
-                    <p class="text-sm text-gray-600">Coupon Code</p>
-                </div>
-            </div>
-        </section>
-        <!-- -----------------------Offer section end---------------------------->
-
-
+        <div class="container-2 border border-yellow-400 rounded-2xl"></div>
     </div>
-    
+
 
     <!-- space --> <div class="mt-96">p</div>
 </body>
