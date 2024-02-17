@@ -6,10 +6,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>P-ticket</title>
+    <style>
+        .banner{
+            /* background: linear-gradient(rgba(228, 219, 219, 0.177), rgba(211, 211, 226, 0.205)); */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- header section start -->
+    <div class="container mx-auto w-[1180px]">
+        <!------------------------- header section start ------------------------->
 
         <!-- navbar section start -->
         <div class="navbar bg-base-100 my-4">
@@ -38,13 +43,21 @@
             <div class="navbar-end">
               <a class="btn">Bus #</a>
             </div>
-          </div>
+        </div>
         <!-- navbar section end -->
 
         <!-- banner section start -->
+        <div class="banner rounded-3xl my-6 flex justify-center items-center text-center bg-[url('/images/banner.png')] h-[580px] bg-no-repeat bg-contain ">
+            <div class="space-y-6 w-3/4 mx-auto">
+                <h1 class="text-6xl text-white">End-to-End travel with</h1>
+                <h1 class="text-6xl text-amber-400">P Paribahan</h1>
+                <p class="text-lg text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button id="btn-by-tickets" class="btn btn-warning">Buy Tickets</button>
+            </div>    
+        </div>
         <!-- banner section end -->
 
-        <!-- header section end -->
+        <!------------------------- header section end ------------------------->
 
     </div>
     
