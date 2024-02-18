@@ -75,3 +75,18 @@ function selectTicket(e){
     setBackgroundGreen(btnId)
 
 }
+
+
+function successful(){
+    const landingPage =  document.getElementById('landing-page');
+    landingPage.classList.add("hidden");
+    const successfulSec = document.getElementById('successful-section');
+    successfulSec.classList.remove('hidden');
+}
+
+function Continue(){
+    // const landingPage =  document.getElementById('landing-page');
+    // landingPage.classList.remove("hidden");
+    // const successfulSec = document.getElementById('successful-section');
+    // successfulSec.classList.add('hidden');
+}
