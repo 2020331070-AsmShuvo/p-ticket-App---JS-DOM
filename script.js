@@ -11,7 +11,7 @@ let clickedButtons = []
 
 function selectTicket(e){
 
-    // checking if the button previusly selected :
+    // checking if the button previusly selected-------------------
     if(clickedButtons.includes(e)){
         alert("You can't select a seat multiple times");
         return;
@@ -19,15 +19,19 @@ function selectTicket(e){
     else{
         clickedButtons.push(e);
     }
+    // checking if the button previusly selected end---------------
 
 
-    // check if selected more than 4
+    // check if selected more than 4 starts--------------------------------
     if(selected_tickets_cnt>=4){
         alert("You cant select more than 4 tickets of a vehicle")
         return;
     }
+    // check if selected more than 4 ends----------------------------------
+
+
     selected_tickets_cnt++;
-    // update the seat cnt start------------------------------------
+    // update the seat cnt start---------------------------------
     const selectedSeatCnt = document.getElementById('seat-cnt');
     let seatCnt = getValueOfTextByID('seat-cnt');
     seatCnt+=selected_tickets_cnt;
@@ -43,28 +47,25 @@ function selectTicket(e){
     let availableSeatCnt=parseInt(availableSeatText);
     availableSeatCnt--;
     availableSeat.innerText = availableSeatCnt;
-    // update the seat left end----------------------------------
+    // update the seat left end-------------------------------------
 
 
-    // updating the total price start:------------------------
+    // updating the total price start:--------------------
     totalTicketPrice += 550;
     setTextById('total-price', totalTicketPrice);
-    // updating the total price end:------------------------
+    // updating the total price end:----------------------
 
 
-    // updating grand price start---------------
+    // updating grand price start--------------------
     setTextById('grand-price', totalTicketPrice);
-    // updating grand price end ---------------
+    // updating grand price end ---------------------
 
 
     const btnId = e.id;
     const btn = document.getElementById(btnId);
     const seatText = btn.innerText;
 
-
-
     //  appending li into ul:
-
     const selectedSeatNo = document.createElement('li');
     selectedSeatNo.textContent = seatText;
     const selectedSeatClass = document.createElement('li');
@@ -89,7 +90,7 @@ function selectTicket(e){
 
     // enabling the next button after 4 coupons selected:
     if(seatCntNum==4){
-        document.getElementById("coupon-input").removeAttribute("disabled");
+        document.getElementById("coupone-input").removeAttribute("disabled");
         document.getElementById("btn-apply-coupon").removeAttribute("disabled");
     }
 
@@ -130,3 +131,37 @@ function Continue(){
     // const successfulSec = document.getElementById('successful-section');
     // successfulSec.classList.add('hidden');
 }
+
+function couponeApply(){
+    // coupone testing----------
+    const couponInputText = getTextValueOfInputById('coupone-input');
+    if(couponInputText != "NEW15" && couponInputText != "Couple 20"){
+        alert("Invalid Coupone");
+    }
+
+    const grand =  document.getElementById('grand-price')
+    const grandTotalText =  grand.innerText;
+    let grandTotalPrice = parseFloat(grandTotalText);
+
+    if(couponInputText == "NEW15"){
+        grandTotalPrice = grandTotalPrice * 0.85;
+        grand.innerText = grandTotalPrice;
+        // hide coupone input
+        const input = document.getElementById('coupone-input');
+        const applyBtn = document.getElementById('btn-apply-coupon');
+        input.setAttribute('hidden', '');
+        applyBtn.setAttribute('hidden', '');
+
+    }
+    else if(couponInputText == "Couple 20"){
+        grandTotalPrice = grandTotalPrice * 0.8;
+        grand.innerText = grandTotalPrice;
+         // hide coupone input
+         const input = document.getElementById('coupone-input');
+         const applyBtn = document.getElementById('btn-apply-coupon');
+         input.setAttribute('hidden', '');
+         applyBtn.setAttribute('hidden', '');
+    }
+
+}
+
