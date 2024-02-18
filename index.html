@@ -51,7 +51,7 @@
                     <h1 class="md:text-6xl text-white">End-to-End travel with</h1>
                     <h1 class="md:text-6xl text-amber-400">P Paribahan</h1>
                     <p class="text-lg text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button id="btn-by-tickets" class="btn btn-warning">Buy Tickets</button>
+                    <button id="btn-by-tickets" onclick="buyTicket()" class="btn btn-warning">Buy Tickets</button>
                 </div>    
             </div>
             <!-- banner section end -->
@@ -101,9 +101,9 @@
             <!-- -----------------------Offer section end---------------------------->
         </div>
 
-        <div class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl mx-10">
+        <div id="ticket-buy-section" class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl mx-10">
             <!-- form section starts -->
-            <section> 
+            <section > 
                 <div class="headings  mb-8 space-y-2">
                     <h3 class="text-4xl text-center font-bold">P.H Paribahan</h3>
                     <p class="text-lg text-gray-500 w-3/4 mx-auto text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
@@ -201,12 +201,12 @@
                         </div>
                         <div class="flex gap-10">
                             <div class="flex gap-4">
-                                <button class="btn w-20 invisible" id="btn-selector">K1</button>
-                                <button class="btn w-20 invisible" id="btn-selector">K2</button>
+                                <button class="btn w-20 invisible" onclick="selectTicket(this)" id="btn-selector">K1</button>
+                                <button class="btn w-20 invisible" onclick="selectTicket(this)" id="btn-selector">K2</button>
                             </div>
                             <div class="flex gap-4">
-                                <button class="btn w-20 invisible" id="btn-selector">K3</button>
-                                <button class="btn w-20 bg-gray-300" id="btn-selector">
+                                <button class="btn w-20 invisible" onclick="selectTicket(this)" id="btn-selector">K3</button>
+                                <button class="btn w-20 bg-gray-300" onclick="selectTicket(this)" id="btn-selector">
                                     <img src="images/tabler-icon-steering-wheel.png" alt="">
                                 </button>
                             </div>
@@ -218,12 +218,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">A1</button>
-                                    <button class="btn w-20" id="btn-selector">A2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">A1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">A2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">A3</button>
-                                    <button class="btn w-20" id="btn-selector">A4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">A3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">A4</button>
                                 </div>
                             </div>
                         </div>
@@ -233,12 +233,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">B1</button>
-                                    <button class="btn w-20" id="btn-selector">B2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">B1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">B2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">B3</button>
-                                    <button class="btn w-20" id="btn-selector">B4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">B3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">B4</button>
                                 </div>
                             </div>
                         </div>
@@ -248,12 +248,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">C1</button>
-                                    <button class="btn w-20" id="btn-selector">C2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">C1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">C2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">C3</button>
-                                    <button class="btn w-20" id="btn-selector">C4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">C3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">C4</button>
                                 </div>
                             </div>
                         </div>
@@ -263,12 +263,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">D1</button>
-                                    <button class="btn w-20" id="btn-selector">D2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">D1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">D2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">D3</button>
-                                    <button class="btn w-20" id="btn-selector">D4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">D3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">D4</button>
                                 </div>
                             </div>
                         </div>
@@ -278,12 +278,12 @@
                             </div>
                             <div class="flex gap-10 ml-1">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">E1</button>
-                                    <button class="btn w-20" id="btn-selector">E2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">E1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">E2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">E3</button>
-                                    <button class="btn w-20" id="btn-selector">E4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">E3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">E4</button>
                                 </div>
                             </div>
                         </div>
@@ -293,12 +293,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">F1</button>
-                                    <button class="btn w-20" id="btn-selector">F2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">F1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">F2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">F3</button>
-                                    <button class="btn w-20" id="btn-selector">F4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">F3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">F4</button>
                                 </div>
                             </div>
                         </div>
@@ -308,12 +308,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">G1</button>
-                                    <button class="btn w-20" id="btn-selector">G2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">G1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">G2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">G3</button>
-                                    <button class="btn w-20" id="btn-selector">G4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">G3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">G4</button>
                                 </div>
                             </div>
                         </div>
@@ -323,12 +323,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">H1</button>
-                                    <button class="btn w-20" id="btn-selector">H2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">H1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">H2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">H3</button>
-                                    <button class="btn w-20" id="btn-selector">H4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">H3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">H4</button>
                                 </div>
                             </div>
                         </div>
@@ -338,12 +338,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">I1</button>
-                                    <button class="btn w-20" id="btn-selector">I2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">I1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">I2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">I3</button>
-                                    <button class="btn w-20" id="btn-selector">I4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">I3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">I4</button>
                                 </div>
                             </div>
                         </div>
@@ -353,12 +353,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">J1</button>
-                                    <button class="btn w-20" id="btn-selector">J2</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">J1</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">J2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">J3</button>
-                                    <button class="btn w-20" id="btn-selector">J4</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">J3</button>
+                                    <button class="btn w-20" onclick="selectTicket(this)" id="btn-selector">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +380,7 @@
                             </div>
                             <hr>
                             <div class="flex justify-around items-center gap-4 w-full">
-                                <ul id="" class="w-full text-gray-600 font-semibold">
+                                <ul id="seat-list-container" class="w-full flex flex-col text-gray-600 font-semibold">
                                     <!-- <ul class="flex justify-between  w-full px-8">
                                         <li>C2</li>
                                         <li class="ml-14">Economy</li>
@@ -490,6 +490,9 @@
         </div>
     </footer>
     <!-- footer ends -->
+
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
