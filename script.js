@@ -13,7 +13,7 @@ function selectTicket(e){
 
     // checking if the button previusly selected-------------------
     if(clickedButtons.includes(e)){
-        alert("You can't select a seat multiple times");
+        showAlert("You can't select a seat multiple times");
         return;
     }
     else{
@@ -24,7 +24,7 @@ function selectTicket(e){
 
     // check if selected more than 4 starts--------------------------------
     if(selected_tickets_cnt>=4){
-        alert("You cant select more than 4 tickets of a vehicle")
+        showAlert("You cant select more than 4 tickets of a vehicle")
         return;
     }
     // check if selected more than 4 ends----------------------------------
@@ -92,6 +92,7 @@ function selectTicket(e){
     if(seatCntNum==4){
         document.getElementById("coupone-input").removeAttribute("disabled");
         document.getElementById("btn-apply-coupon").removeAttribute("disabled");
+        document.getElementById("btn-next").removeAttribute("disabled");
     }
 
 }
@@ -108,11 +109,12 @@ function successful(){
     console.log(email);
     const phoneNumberInput = document.getElementById('passenger-number').value;
     if(seatCntNum==0){
-        alert("Please select a ticket first");
+        showAlert("Please select a ticket first");
         return;
     }
     if(phoneNumberInput.trim() === ''){
-        alert("Please give your number");
+        // alert("Please give your number");
+        showAlert('Please give your number');
         return;
     }
     // check filled or not end-------------------------------
@@ -126,19 +128,20 @@ function successful(){
 }
 
 function Continue(){
-    // const landingPage =  document.getElementById('landing-page');
-    // landingPage.classList.remove("hidden");
-    // const successfulSec = document.getElementById('successful-section');
-    // successfulSec.classList.add('hidden');
+    const landingPage =  document.getElementById('landing-page');
+    landingPage.classList.remove("hidden");
+    const successfulSec = document.getElementById('successful-section');
+    successfulSec.classList.add('hidden');
 }
 
 function couponeApply(){
     // coupone testing----------
     const couponInputText = getTextValueOfInputById('coupone-input');
     if(couponInputText != "NEW15" && couponInputText != "Couple 20"){
-        alert("Invalid Coupone");
+        showAlert("Invalid Coupone");
+        return;
     }
-
+    
     const grand =  document.getElementById('grand-price')
     const grandTotalText =  grand.innerText;
     let grandTotalPrice = parseFloat(grandTotalText);
@@ -163,5 +166,15 @@ function couponeApply(){
          applyBtn.setAttribute('hidden', '');
     }
 
+    // showing discount price:
+    const discountPriceSection =  document.getElementById('disc-price');
+    discountPriceSection.classList.remove("hidden");
+    const curDiscountPrice = document.getElementById('discount-price');
+    let updatedDiscPrice =  totalTicketPrice - grandTotalPrice;
+    setTextById('discount-price', updatedDiscPrice);
+    // ***********************************************88
+
 }
 
+// Event listener for close button
+document.getElementById('closeAlertBtn').addEventListener('click', hideAlert);

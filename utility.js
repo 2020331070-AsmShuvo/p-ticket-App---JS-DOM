@@ -1,6 +1,7 @@
 function setBackgroundGreen(id){
     const elem = document.getElementById(id);
-    elem.classList.add('bg-green-600');
+    elem.classList.add('bg-green-500');
+    elem.classList.add('text-white');
 }
 
 function getValueOfTextByID(id){
@@ -21,4 +22,18 @@ function getTextValueOfInputById(id){
     return inputText;
     // console.log(inputText);
 
+}
+
+
+function showAlert(msg) {
+    const alertContainer = document.getElementById('alertContainer');
+    const alertMsg = document.getElementById('alert-msg');
+    alertMsg.innerText = msg;
+    alertContainer.classList.remove('hidden');
+
+}
+
+function hideAlert(msg) {
+    const alertContainer = document.getElementById('alertContainer');
+    alertContainer.classList.add('hidden');
 }
