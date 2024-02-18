@@ -32,10 +32,10 @@
                     <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">P-ticket</a>
+                <a class="btn btn-ghost text-4xl font-bold">P-ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
+                <ul class="menu menu-horizontal px-1 text-gray-600 font-semibold">
                     <li><a>Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Destination</a></li>
@@ -43,7 +43,7 @@
                 </ul>
                 </div>
                 <div class="navbar-end">
-                <a class="btn">Bus #</a>
+                <a class="btn text-amber-500 bg-amber-50 border border-amber-200 w-[100px]">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
             <!-- navbar section end -->
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class="text-start">
                                         <h3 class="text-4xl">Greenline Paribahan</h3>
-                                        <h3 class="text-lg text-gray-500">Coach-009-WEB ! AC_Business</h3>
+                                        <h3 class="text-lg text-gray-500 ml-">Coach-009-WEB ! AC_Business</h3>
                                     </div>
                                 </div>
                                 
@@ -139,8 +139,14 @@
                             <!-- form heading ends -->
     
                             <div class="w-full space-y-4 bg-gray-50 p-4 rounded-2xl m-4">
-                                <input type="text" placeholder="Route" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
-                                <input type="text" placeholder="Departure Time" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm text-gray-600">Route</p>
+                                    <p class="text-sm text-gray-600">Dhaka - Sylhet</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm text-gray-600">Departure Time</p>
+                                    <p class="text-sm text-gray-600">9.00PM</p>
+                                </div>
                                 <div>
                                     <button class="btn mr-4 text-gray-600">Boarding Point - Laxmipur</button>
                                     <button class="btn mr-4 text-gray-600">Dropping Point - Bogura</button>
@@ -157,8 +163,8 @@
                         </div>
                         <div class="space-y-2 p-10 text-center">
                             <div class="text-center ml-12"><img src="images/fare.png" alt=""></div>
-                            <h2 class="text-4xl mr-1">550 Taka</h2>
-                            <h3 class="text-5xl text-gray-600 mr-1">Per seat</h3>
+                            <h2 class="text-3xl font-bold mr-1">550 Taka</h2>
+                            <h3 class="text-2xl text-gray-600 mr-1">Per seat</h3>
                         </div>
                         <!-- per seat cost ends -->
                 </div>
@@ -193,6 +199,23 @@
             <section class="mt-8 flex justify-around">
                 <!-- ticket selection starts-->
                 <div class="w-[500px] flex flex-col gap-4 justify-around ">
+                    <div class="flex items-center  ml-2 gap-6">
+                        <div>
+                            <p></p>
+                        </div>
+                        <div class="flex gap-10">
+                            <div class="flex gap-4">
+                                <button class="btn w-20 invisible" id="btn-selector">K1</button>
+                                <button class="btn w-20 invisible" id="btn-selector">K2</button>
+                            </div>
+                            <div class="flex gap-4">
+                                <button class="btn w-20 invisible" id="btn-selector">K3</button>
+                                <button class="btn w-20 bg-gray-300" id="btn-selector">
+                                    <img src="images/tabler-icon-steering-wheel.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                         <div class="flex items-center gap-6">
                             <div>
                                 <p>A</p>
@@ -343,21 +366,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center  ml-2 gap-6">
-                            <div>
-                                <p>K</p>
-                            </div>
-                            <div class="flex gap-10">
-                                <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">K1</button>
-                                    <button class="btn w-20" id="btn-selector">K2</button>
-                                </div>
-                                <div class="flex gap-4">
-                                    <button class="btn w-20" id="btn-selector">K3</button>
-                                    <button class="btn w-20" id="btn-selector">K4</button>
-                                </div>
-                            </div>
-                        </div>
+                        
                 </div>
                 <!-- ticket selection ends-->
 
@@ -365,10 +374,10 @@
                     <!-- ticket confirmation start-->
                     <div class="rounded-2xl">
                         <div class="p-8 mb-8 bg-gray-50">
-                            <div class="flex justify-around items-center">
-                                <div class="flex gap-1 items-center mb-4">
+                            <div class="flex justify-around items-center text-center mb-4">
+                                <div class="flex gap-1 justify-center items-center ">
                                     <p class="text-2xl font-bold">Seat </p>
-                                    <div id="seat-cnt" class="text-[16px] bg-amber-300 rounded-3xl w-12 h-6 font-bold text-white text-center">0</div>
+                                    <div id="seat-cnt" class=" text-[16px] bg-amber-300 rounded-3xl w-12 h-6 font-bold text-white text-center">0</div>
                                 </div>
                                 <p class="text-2xl font-bold">Class</p>
                                 <p class="text-2xl font-bold">Price</p>
@@ -436,7 +445,55 @@
         </div>
         <!-- ticket buying section ends -->
 
+
+        
+
      </div>
+
+     <!-- footer starts -->
+     <footer>
+        <div>
+            <footer class="footer p-10 bg-base-200 text-base-content bg-black text-gray-300 border-b border-gray-600 border-dashed">
+                <aside class="space-y-2">
+                    <h2 class="text-3xl font-semibold">P-Ticket</h2>
+                    <p class="w-3/4">P-Ticket is a digital platform to make your daily commuting better</p>
+                </aside> 
+                
+                <div>
+                    <p class="text-lg font-semibold text-gray-300">Download our app</p>
+                    <div class="flex gap-3 border-2 border-white p-2 rounded-lg">
+                        <div>
+                            <img src="images/playstore.png" class="h-11" alt="">
+                        </div>
+                        <div>
+                            <p class="text-xm text-white">GET IT ON</p>
+                            <h3 class="text-lg text-white font-semibold">Google Play</h3>
+                        </div>
+                    </div>
+                </div>
+              </footer>
+        </div>
+        
+        <div>
+            <footer class="footer items-center px-10 pb-12 pt-4 bg-black text-neutral-content">
+                <aside class="items-center grid-flow-col">
+                  <p>@ll rights reserved, P-Ticket services limited.2024</p>
+                </aside> 
+                <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                  <a>
+                    <p class="text-sm text-gray-300 font-semibold">Terms & conditions</p>
+                  </a>
+                  <a>
+                    <p class="text-sm text-gray-300 font-semibold">Return & refund policy</p>
+                  </a>
+                  <a>
+                    <p class="text-sm text-gray-300 font-semibold">Privacy policy</p>
+                  </a>
+                </nav>
+              </footer>
+        </div>
+    </footer>
+    <!-- footer ends -->
 
         
 
