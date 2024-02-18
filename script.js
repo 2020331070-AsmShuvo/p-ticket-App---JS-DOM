@@ -6,6 +6,7 @@ function buyTicket(){
 
 let selected_tickets_cnt = 0;
 let seatCntNum = 0;
+let totalTicketPrice = 0;
 
 function selectTicket(e){
     if(selected_tickets_cnt>=4){
@@ -31,10 +32,16 @@ function selectTicket(e){
     availableSeat.innerText = availableSeatCnt;
     // update the seat left end----------------------------------
 
+
     // updating the total price start:------------------------
-     
+    totalTicketPrice += 550;
+    setTextById('total-price', totalTicketPrice);
     // updating the total price end:------------------------
 
+
+    // updating grand price start---------------
+    setTextById('grand-price', totalTicketPrice);
+    // updating grand price end ---------------
 
 
     const btnId = e.id;
