@@ -7,8 +7,21 @@ function buyTicket(){
 let selected_tickets_cnt = 0;
 let seatCntNum = 0;
 let totalTicketPrice = 0;
+let clickedButtons = []
 
 function selectTicket(e){
+
+    // checking if the button previusly selected :
+    if(clickedButtons.includes(e)){
+        alert("You can't select a seat multiple times");
+        return;
+    }
+    else{
+        clickedButtons.push(e);
+    }
+
+
+    // check if selected more than 4
     if(selected_tickets_cnt>=4){
         alert("You cant select more than 4 tickets of a vehicle")
         return;
@@ -73,6 +86,12 @@ function selectTicket(e){
     seatListContainer.appendChild(ul);
 
     setBackgroundGreen(btnId)
+
+    // enabling the next button after 4 coupons selected:
+    if(seatCntNum==4){
+        document.getElementById("coupon-input").removeAttribute("disabled");
+        document.getElementById("btn-apply-coupon").removeAttribute("disabled");
+    }
 
 }
 
