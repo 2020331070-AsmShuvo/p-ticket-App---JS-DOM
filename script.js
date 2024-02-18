@@ -11,7 +11,11 @@ function selectTicket(e){
         return;
     }
     selected_tickets_cnt++;
-    const seatText = e.innerText;
+
+    const btnId = e.id;
+    const btn = document.getElementById(btnId);
+    // console.log(btn);
+    const seatText = btn.innerText;
     console.log(seatText);
 
     //  appending li into ul:
@@ -32,6 +36,10 @@ function selectTicket(e){
     ul.appendChild(selectedSeatNo);
     ul.appendChild(selectedSeatClass);
     ul.appendChild(selectedSeatPrice);
+    
     const seatListContainer = document.getElementById('seat-list-container');
     seatListContainer.appendChild(ul);
+
+    setBackgroundGreen(btnId)
+
 }
