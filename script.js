@@ -78,6 +78,27 @@ function selectTicket(e){
 
 
 function successful(){
+
+    // check filled or not start-------------------------------
+    const name =  getTextValueOfInputById('passenger-name');
+    console.log(name);
+    const phone =  getTextValueOfInputById('passenger-number');
+    console.log(phone);
+    const email =  getTextValueOfInputById('passenger-email');
+    console.log(email);
+    const phoneNumberInput = document.getElementById('passenger-number').value;
+    if(seatCntNum==0){
+        alert("Please select a ticket first");
+        return;
+    }
+    if(phoneNumberInput.trim() === ''){
+        alert("Please give your number");
+        return;
+    }
+    // check filled or not end-------------------------------
+
+
+    // change screen
     const landingPage =  document.getElementById('landing-page');
     landingPage.classList.add("hidden");
     const successfulSec = document.getElementById('successful-section');

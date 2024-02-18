@@ -14,3 +14,11 @@ function setTextById(id, number){
     const elem = document.getElementById(id);
     elem.innerText=number;
 }
+
+function getTextValueOfInputById(id){
+    const elem = document.getElementById(id);
+    const inputText = elem.value;
+    return inputText;
+    // console.log(inputText);
+
+}
