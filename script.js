@@ -4,19 +4,44 @@ function buyTicket(){
      ticketSection.scrollIntoView({behavior: 'smooth'});
 }
 
-let selected_tickets_cnt =0;
+let selected_tickets_cnt = 0;
+let seatCntNum = 0;
+
 function selectTicket(e){
     if(selected_tickets_cnt>=4){
         alert("You cant select more than 4 tickets of a vehicle")
         return;
     }
     selected_tickets_cnt++;
+    // update the seat cnt start------------------------------------
+    const selectedSeatCnt = document.getElementById('seat-cnt');
+    let seatCnt = getValueOfTextByID('seat-cnt');
+    seatCnt+=selected_tickets_cnt;
+    console.log(seatCnt);
+    seatCntNum++;
+    setTextById('seat-cnt', seatCntNum);
+    // update the seat cnt end-----------------------------------
+
+
+    // update the seat left start:----------------------------------
+    let availableSeat = document.getElementById('cnt-left-seats');
+    let availableSeatText = getValueOfTextByID('cnt-left-seats');
+    let availableSeatCnt=parseInt(availableSeatText);
+    availableSeatCnt--;
+    availableSeat.innerText = availableSeatCnt;
+    // update the seat left end----------------------------------
+
+    // updating the total price start:------------------------
+     
+    // updating the total price end:------------------------
+
+
 
     const btnId = e.id;
     const btn = document.getElementById(btnId);
-    // console.log(btn);
     const seatText = btn.innerText;
-    console.log(seatText);
+
+
 
     //  appending li into ul:
 
