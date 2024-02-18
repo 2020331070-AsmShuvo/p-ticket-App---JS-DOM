@@ -7,13 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>P-ticket</title>
     <style>
-        .banner{
-            /* background: linear-gradient(rgba(228, 219, 219, 0.177), rgba(211, 211, 226, 0.205)); */
-        }
     </style>
 </head>
 <body>
-    <div class="container mx-auto w-[1180px]">
+    <div class=" mx-auto ">
         <div class="container-1">
                 <!------------------------- header section start ------------------------->
 
@@ -43,16 +40,16 @@
                 </ul>
                 </div>
                 <div class="navbar-end">
-                <a class="btn text-amber-500 bg-amber-50 border border-amber-200 w-[100px]">Bus <img src="images/bus-icon.png" alt=""></a>
+                <a class="btn text-amber-500 bg-amber-50 border border-amber-200">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
             <!-- navbar section end -->
 
             <!-- banner section start -->
-            <div class="banner rounded-3xl mt=6 flex justify-center items-center text-center bg-[url('/images/banner.png')] h-[580px] bg-no-repeat bg-contain ">
-                <div class="space-y-6 w-3/4 mx-auto">
-                    <h1 class="text-6xl text-white">End-to-End travel with</h1>
-                    <h1 class="text-6xl text-amber-400">P Paribahan</h1>
+            <div class="banner rounded-3xl mt-6 flex justify-center items-center text-center bg-[url('/images/banner.png')] md:h-[1000px] mx-auto bg-no-repeat bg-cover bg-center">
+                <div class="space-y-6 md:w-3/4 mx-auto">
+                    <h1 class="md:text-6xl text-white">End-to-End travel with</h1>
+                    <h1 class="md:text-6xl text-amber-400">P Paribahan</h1>
                     <p class="text-lg text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                     <button id="btn-by-tickets" class="btn btn-warning">Buy Tickets</button>
                 </div>    
@@ -64,11 +61,11 @@
 
             <!-- -----------------------Offer section start---------------------------->
             <div class="headings  mb-8 ">
-                <h3 class="text-4xl text-center font-bold">Best offers for you</h3>
+                <h3 class="text-4xl text-center font-bold my-8">Best offers for you</h3>
             </div>
-            <section class="flex gap-4 justify-evenly">
+            <section class="flex flex-col md:flex-row gap-4 justify-evenly">
                 
-                <div class="flex  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
+                <div class="flex mx-10 px-10  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
                     <div class="space-y-2">
                         <h2 class="text-5xl font-bold">15% OFF</h2>
                         <p class="text-lg">On your next purchase</p>
@@ -104,17 +101,17 @@
             <!-- -----------------------Offer section end---------------------------->
         </div>
 
-        <div class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl">
+        <div class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl mx-10">
             <!-- form section starts -->
             <section> 
                 <div class="headings  mb-8 space-y-2">
                     <h3 class="text-4xl text-center font-bold">P.H Paribahan</h3>
                     <p class="text-lg text-gray-500 w-3/4 mx-auto text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 </div> 
-                <div class="flex  justify-center items-center bg-white  text-black text-center rounded-2xl">
+                <div class="flex flex-col md:flex-row justify-center items-center mx-36 bg-white  text-black text-center rounded-2xl">
                         <!-- form starts -->
                         
-                        <div>
+                        <div class="">
                             <!-- form heading starts -->
                             <div class="flex justify-between items-center ml-4">
                                 <div class="flex gap-3 items-center">
@@ -158,8 +155,8 @@
                         
                         <!-- per seat cost starts -->
                         
-                        <div class="text-center ">
-                            <img src="images/info-devider.png" class="h-96" alt="">
+                        <div class="text-center">
+                            <img src="images/info-devider.png" class=" h-0 md:h-96" alt="">
                         </div>
                         <div class="space-y-2 p-10 text-center">
                             <div class="text-center ml-12"><img src="images/fare.png" alt=""></div>
@@ -171,15 +168,14 @@
             </section>
             <!-- form section ends -->
 
-            <!--  -->
             <!-- ticket buying section starts -->
-        <div class="container-3 p-10 bg-white mt-9 rounded-2xl">
+        <div class="container-3 p-10 bg-white mt-9 rounded-2xl  mx-36">
             <div class="heaidngs">
                 <div class="space-y-2">
-                    <div> 
+                    <div class=""> 
                         <h3 class="text-3xl font-bold">Select Your Seat</h3>
                     </div>
-                    <div class="flex justify-between items-center"> 
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center"> 
                         <div class="flex justify-center items-center gap-2">
                             <div>
                                 <img src="images/seat-gray.png" alt="">
@@ -187,7 +183,7 @@
                             <h4 class="text-lg text-gray-600">Available</h4>
                         </div>
 
-                        <div class="flex justify-center items-center gap-2">
+                        <div class="flex items-center gap-2">
                             <div>
                                 <img src="images/seat-green-filled.png" alt="">
                             </div>
@@ -196,9 +192,9 @@
                     </div>
                 </div>
             </div>
-            <section class="mt-8 flex justify-around">
+            <section class="mt-8 flex justify-between flex-col md:flex-row">
                 <!-- ticket selection starts-->
-                <div class="w-[500px] flex flex-col gap-4 justify-around ">
+                <div class="w-full md:w-[500px]  flex flex-col gap-4 justify-around items-center md:justify-between ">
                     <div class="flex items-center  ml-2 gap-6">
                         <div>
                             <p></p>
@@ -370,9 +366,9 @@
                 </div>
                 <!-- ticket selection ends-->
 
-                <div>
+                <div class="">
                     <!-- ticket confirmation start-->
-                    <div class="rounded-2xl">
+                    <div class="rounded-2xl  w-1/2 mx-auto md:w-full">
                         <div class="p-8 mb-8 bg-gray-50">
                             <div class="flex justify-around items-center text-center mb-4">
                                 <div class="flex gap-1 justify-center items-center ">
@@ -495,9 +491,5 @@
     </footer>
     <!-- footer ends -->
 
-        
-
-
-    <!-- space --> <div class="mt-96">p</div>
 </body>
 </html>
