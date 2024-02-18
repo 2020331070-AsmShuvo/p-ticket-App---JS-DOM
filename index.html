@@ -105,64 +105,98 @@
         </div>
 
         <div class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl">
-            <div class="headings  mb-8 space-y-2">
-                <h3 class="text-4xl text-center font-bold">P.H Paribahan</h3>
-                <p class="text-lg text-gray-500 w-3/4 mx-auto text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            </div> 
+            <!-- form section starts -->
+            <section> 
+                <div class="headings  mb-8 space-y-2">
+                    <h3 class="text-4xl text-center font-bold">P.H Paribahan</h3>
+                    <p class="text-lg text-gray-500 w-3/4 mx-auto text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div> 
                 <div class="flex  justify-center items-center bg-white  text-black text-center rounded-2xl">
-                    <!-- form starts -->
-                    
-                    <div>
-                        <!-- form heading starts -->
-                        <div class="flex justify-between items-center ml-4">
-                            <div class="flex gap-3 items-center">
-                                <div>
-                                    <img src="images/bus-logo.png" alt="">
-                                </div>
-                                <div class="text-start">
-                                    <h3 class="text-4xl">Greenline Paribahan</h3>
-                                    <h3 class="text-lg text-gray-500">Coach-009-WEB ! AC_Business</h3>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <button id="btn-seats-left" class="btn bg-amber-200 text-amber-500">
+                        <!-- form starts -->
+                        
+                        <div>
+                            <!-- form heading starts -->
+                            <div class="flex justify-between items-center ml-4">
+                                <div class="flex gap-3 items-center">
                                     <div>
-                                        <img src="images/seat-green.png" alt="">
+                                        <img src="images/bus-logo.png" alt="">
                                     </div>
-                                    <span id="cnt-left-seats">40</span> Seats Left
-                                </button>
+                                    <div class="text-start">
+                                        <h3 class="text-4xl">Greenline Paribahan</h3>
+                                        <h3 class="text-lg text-gray-500">Coach-009-WEB ! AC_Business</h3>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <button id="btn-seats-left" class="btn bg-amber-200 text-amber-500">
+                                        <div>
+                                            <img src="images/seat-green.png" alt="">
+                                        </div>
+                                        <span id="cnt-left-seats">40</span> Seats Left
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- form heading ends -->
+    
+                            <div class="w-full space-y-4 bg-gray-50 p-4 rounded-2xl m-4">
+                                <input type="text" placeholder="Route" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
+                                <input type="text" placeholder="Departure Time" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
+                                <div>
+                                    <button class="btn mr-4 text-gray-600">Boarding Point - Laxmipur</button>
+                                    <button class="btn mr-4 text-gray-600">Dropping Point - Bogura</button>
+                                    <button class="btn mr-4 text-gray-600">Est. Time - 11 hour</button>
+                                </div>
                             </div>
                         </div>
-                        <!-- form heading ends -->
-
-                        <div class="w-full space-y-4 bg-gray-50 p-4 rounded-2xl m-4">
-                            <input type="text" placeholder="Route" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
-                            <input type="text" placeholder="Departure Time" class="input input-ghost w-full border-b-2 border-t-0 border-l-0 border-r-0 border-gray-200 border-dashed" />
-                            <div>
-                                <button class="btn mr-4 text-gray-600">Boarding Point - Laxmipur</button>
-                                <button class="btn mr-4 text-gray-600">Dropping Point - Bogura</button>
-                                <button class="btn mr-4 text-gray-600">Est. Time - 11 hour</button>
-                            </div>
+                        <!-- form ends -->
+                        
+                        <!-- per seat cost starts -->
+                        
+                        <div class="text-center ">
+                            <img src="images/info-devider.png" class="h-96" alt="">
                         </div>
-                    </div>
-                    <!-- form ends -->
-                    
-                    <!-- per seat cost starts -->
-                    
-                    <div class="text-center ">
-                        <img src="images/info-devider.png" class="h-96" alt="">
-                    </div>
-                    <div class="space-y-2 p-10 text-center">
-                        <div class="text-center ml-12"><img src="images/fare.png" alt=""></div>
-                        <h2 class="text-4xl mr-1">550 Taka</h2>
-                        <h3 class="text-5xl text-gray-600 mr-1">Per seat</h3>
-                    </div>
-                    <!-- per seat cost ends -->
+                        <div class="space-y-2 p-10 text-center">
+                            <div class="text-center ml-12"><img src="images/fare.png" alt=""></div>
+                            <h2 class="text-4xl mr-1">550 Taka</h2>
+                            <h3 class="text-5xl text-gray-600 mr-1">Per seat</h3>
+                        </div>
+                        <!-- per seat cost ends -->
                 </div>
+            </section>
+            <!-- form section ends -->
+        </div>
+
+        <!-- ticket buying section starts -->
+        <div class="container-3 p-10 bg-gray-50 mt-9 rounded-2xl">
+            
+            <section class="mt-8">
+                <!-- ticket selection -->
+                <div class="space-y-2">
+                    <div> 
+                        <h3 class="text-3xl font-bold">Select Your Seat</h3>
+                    </div>
+                    <div class="flex justify-between items-center"> 
+                        <div class="flex justify-center items-center gap-2">
+                            <div>
+                                <img src="images/seat-gray.png" alt="">
+                            </div>
+                            <h4 class="text-lg text-gray-600">Available</h4>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-2">
+                            <div>
+                                <img src="images/seat-green-filled.png" alt="">
+                            </div>
+                            <h4 class="text-lg text-green-600">Selected</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- ticket confirmation -->
+                <div></div>
+            </section>
             
         </div>
-    </div>
+        <!-- ticket buying section ends -->
 
 
     <!-- space --> <div class="mt-96">p</div>
