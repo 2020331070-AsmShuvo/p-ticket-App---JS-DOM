@@ -361,49 +361,75 @@
                 </div>
                 <!-- ticket selection ends-->
 
-                <!-- ticket confirmation start-->
-                <div class="rounded-2xl w-1/2">
-                    <div class="p-8  bg-gray-50">
-                        <div class="flex justify-around items-center">
-                            <div class="flex gap-1 items-center mb-4">
-                                <p class="text-2xl font-bold">Seat </p>
-                                <div id="seat-cnt" class="text-[16px] bg-amber-300 rounded-3xl w-12 h-6 font-bold text-white text-center">0</div>
+                <div>
+                    <!-- ticket confirmation start-->
+                    <div class="rounded-2xl">
+                        <div class="p-8 mb-8 bg-gray-50">
+                            <div class="flex justify-around items-center">
+                                <div class="flex gap-1 items-center mb-4">
+                                    <p class="text-2xl font-bold">Seat </p>
+                                    <div id="seat-cnt" class="text-[16px] bg-amber-300 rounded-3xl w-12 h-6 font-bold text-white text-center">0</div>
+                                </div>
+                                <p class="text-2xl font-bold">Class</p>
+                                <p class="text-2xl font-bold">Price</p>
                             </div>
-                            <p class="text-2xl font-bold">Class</p>
-                            <p class="text-2xl font-bold">Price</p>
-                        </div>
-                        <hr>
-                        <div class="flex justify-around items-center gap-4 w-full">
-                            <ul id="" class="w-full text-gray-600 font-semibold">
-                                <!-- <ul class="flex justify-between  w-full px-8">
-                                    <li>C2</li>
-                                    <li class="ml-14">Economy</li>
-                                    <li>550</li>
-                                </ul> -->
-                            </ul>
-                            
-                        </div>
-                        <hr>
-                        <div class="flex justify-between px-5 items-center my-5">
-                            <div class="flex gap-1 items-center">
-                                <p class="text-2xl font-bold">Total Price </p>
+                            <hr>
+                            <div class="flex justify-around items-center gap-4 w-full">
+                                <ul id="" class="w-full text-gray-600 font-semibold">
+                                    <!-- <ul class="flex justify-between  w-full px-8">
+                                        <li>C2</li>
+                                        <li class="ml-14">Economy</li>
+                                        <li>550</li>
+                                    </ul> -->
+                                </ul>
+                                
                             </div>
-                            <p class="text-2xl font-bold">BDT <span id="seat-price">00</span></p>
-                        </div>
-                        <div class="px-2 bg-white py-2 rounded-lg">
-                            <input type="text" placeholder="Have any coupon?" class="input w-3/4" />
-                            <button class="btn bg-green-500 text-white font-semibold w-24 ">Apply</button>
-                        </div>
-                        <div class="flex justify-between px-5 items-center my-5">
-                            <div class="flex gap-1 items-center">
-                                <p class="text-2xl font-bold">Grand Total </p>
+                            <hr>
+                            <div class="flex justify-between px-5 items-center my-5">
+                                <div class="flex gap-1 items-center">
+                                    <p class="text-2xl font-bold">Total Price </p>
+                                </div>
+                                <p class="text-2xl font-bold">BDT <span id="seat-price">00</span></p>
                             </div>
-                            <p class="text-2xl font-bold">BDT <span id="seat-price">00</span></p>
-                        </div>
+                            <div class="px-2 bg-white py-2 rounded-lg flex">
+                                <input type="text" placeholder="Have any coupon?" class="input w-3/4" />
+                                <button class="btn bg-green-500 text-white font-semibold w-24 ">Apply</button>
+                            </div>
+                            <div class="flex justify-between px-5 items-center my-5">
+                                <div class="flex gap-1 items-center">
+                                    <p class="text-2xl font-bold">Grand Total </p>
+                                </div>
+                                <p class="text-2xl font-bold">BDT <span id="seat-price">00</span></p>
+                            </div>
     
+                        </div>
+                    </div>
+                <!-- ticket confirmation ends-->
+
+                <!-- passenger form starts -->
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <p class="font-semibold">Passanger Name*</p>
+                        <input type="text" placeholder="Enter your name" class="input input-bordered w-full " required />
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-semibold">Passanger Number*</p>
+                        <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full " required/>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-semibold">Email ID</p>
+                        <input type="text" placeholder="Enter your Email" class="input input-bordered w-full" />
+                    </div>
+                    <div class="space-y-2">
+                        <button class="btn w-full btn-warning text-white font-bold text-lg">Next</button>
+                    </div>
+                    <div class="flex underline justify-between items-center px-4 text-gray-500">
+                        <p><a href="#">Terms and conditions</a></p>
+                        <p><a href="#">Cancellation policy</a></p>
                     </div>
                 </div>
-                <!-- ticket confirmation ends-->
+                <!-- passenger form ends -->
+                </div>
                 
             </section>
             
