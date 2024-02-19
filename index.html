@@ -49,7 +49,7 @@
                 </ul>
                 </div>
                 <div class="navbar-en">
-                <a class="btn text-amber-500 bg-amber-50 border border-amber-200 raleway ml-5">Bus <img src="images/bus-icon.png" alt=""></a>
+                <a onclick="buyTicket()" class="btn text-amber-500 bg-amber-50 border border-amber-200 raleway ml-5">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
             <!-- navbar section end -->
@@ -410,9 +410,9 @@
                                 </div>
                                 <p class="text-lg font-semibold">BDT <span id="total-price" >00</span></p>
                             </div>
-                            <div id="coupon-field" class="px-2 md:bg-white py-2 rounded-lg flex">
+                            <div id="coupon-field" class="px-2 py-2 rounded-lg flex">
                                 <input id="coupone-input" type="text" placeholder="Have any coupon?" class="input w-3/4" disabled/>
-                                <button id="btn-apply-coupon" onclick="couponeApply()" class="btn bg-green-500 text-white font-semibold w-24 raleway" disabled>Apply</button>
+                                <button id="btn-apply-coupon" onclick="couponeApply()" class="btn bg-green-500 text-white font-semibold ml-2 w-24 raleway" disabled>Apply</button>
                             </div>
                             <di id="disc-price" class="flex text-red-500 justify-between px-5 items-center my-2 hidden">
                                 <div class="flex gap-1 items-center">
