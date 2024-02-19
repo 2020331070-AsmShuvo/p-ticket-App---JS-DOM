@@ -7,7 +7,7 @@ function buyTicket(){
 let selected_tickets_cnt = 0;
 let seatCntNum = 0;
 let totalTicketPrice = 0;
-let clickedButtons = []
+let clickedButtons = [];
 
 function selectTicket(e){
 
@@ -171,12 +171,13 @@ function couponeApply(){
 }
 
 function gotoLandingPage(){
-    const landingPage =  document.getElementById('landing-page');
-    landingPage.classList.remove("hidden");
-    const successfulSec = document.getElementById('successful-section');
-    successfulSec.classList.add('hidden');
-    // console.log("continue");
+    // const landingPage =  document.getElementById('landing-page');
+    // landingPage.classList.remove("hidden");
+    // const successfulSec = document.getElementById('successful-section');
+    // successfulSec.classList.add('hidden');
+    // // console.log("continue");
+    window.location.reload();
 }
 
-// Event listener for close button
+// Event close listener for close button
 document.getElementById('closeAlertBtn').addEventListener('click', hideAlert);
