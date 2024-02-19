@@ -127,12 +127,6 @@ function successful(){
     successfulSec.classList.remove('hidden');
 }
 
-function Continue(){
-    const landingPage =  document.getElementById('landing-page');
-    landingPage.classList.remove("hidden");
-    const successfulSec = document.getElementById('successful-section');
-    successfulSec.classList.add('hidden');
-}
 
 function couponeApply(){
     // coupone testing----------
@@ -174,6 +168,14 @@ function couponeApply(){
     setTextById('discount-price', updatedDiscPrice);
     // ***********************************************88
 
+}
+
+function gotoLandingPage(){
+    const landingPage =  document.getElementById('landing-page');
+    landingPage.classList.remove("hidden");
+    const successfulSec = document.getElementById('successful-section');
+    successfulSec.classList.add('hidden');
+    // console.log("continue");
 }
 
 // Event listener for close button

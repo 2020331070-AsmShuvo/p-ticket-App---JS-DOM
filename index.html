@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>P-ticket</title>
     <style>
+        .inter{
+            font-family: "Inter", sans-serif;
+        }
+        .raleway{
+            font-family: "Raleway", sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -29,18 +38,18 @@
                     <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-4xl font-bold">P-ticket</a>
+                <a class="btn btn-ghost text-4xl font-extrabold raleway">P-ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-gray-600 font-semibold">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
+                    <li class="raleway"><a>Home</a></li>
+                    <li class="raleway"><a>About</a></li>
+                    <li class="raleway"><a>Destination</a></li>
+                    <li class="raleway"><a>Search</a></li>
                 </ul>
                 </div>
                 <div class="navbar-end">
-                <a class="btn text-amber-500 bg-amber-50 border border-amber-200">Bus <img src="images/bus-icon.png" alt=""></a>
+                <a class="btn text-amber-500 bg-amber-50 border border-amber-200 raleway">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
             <!-- navbar section end -->
@@ -48,10 +57,10 @@
             <!-- banner section start -->
             <div class="banner rounded-3xl mt-6 flex justify-center items-center text-center bg-[url('/images/banner.png')] md:h-[1000px] mx-auto bg-no-repeat bg-cover bg-center">
                 <div class="space-y-6 md:w-3/4 mx-auto">
-                    <h1 class="md:text-6xl text-white">End-to-End travel with</h1>
-                    <h1 class="md:text-6xl text-amber-400">P Paribahan</h1>
-                    <p class="text-lg mx-auto w-3/4 text-center  text-white">Streamline your travels with our hassle-free bus ticketing app, offering seamless booking experiences and ensuring you're always on the right track to your next adventure</p>
-                    <button id="btn-by-tickets" onclick="buyTicket()" class="btn btn-warning">Buy Tickets</button>
+                    <h1 class="md:text-6xl text-white raleway font-extrabold">End-to-End travel with</h1>
+                    <h1 class="md:text-6xl text-amber-400 raleway font-extrabold">P Paribahan</h1>
+                    <p class="text-lg mx-auto w-3/4 text-center  text-white inter">Streamline your travels with our hassle-free bus ticketing app, offering seamless booking experiences and ensuring you're always on the right track to your next adventure</p>
+                    <button id="btn-by-tickets raleway" onclick="buyTicket()" class="btn btn-warning">Buy Tickets</button>
                 </div>    
             </div>
             <!-- banner section end -->
@@ -61,27 +70,27 @@
 
             <!-- -----------------------Offer section start---------------------------->
             <div class="headings  mb-8 ">
-                <h3 class="text-4xl text-center font-bold my-8">Best offers for you</h3>
+                <h3 class="text-4xl text-center font-bold my-8 raleway">Best offers for you</h3>
             </div>
             <section class="flex flex-col md:flex-row gap-4 justify-evenly">
                 
                 <div class="flex mx-10 px-10  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
                     <div class="space-y-2">
-                        <h2 class="text-5xl font-bold">15% OFF</h2>
-                        <p class="text-lg">On your next purchase</p>
-                        <p class="text-sm text-gray-700">Use by January 2024</p>
+                        <h2 class="text-5xl font-bold inter">15% OFF</h2>
+                        <p class="text-lg inter">On your next purchase</p>
+                        <p class="text-sm text-gray-700 inter">Use by January 2024</p>
                     </div>
                     <div class="">
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="space-y-2">
-                        <h2 class="text-4xl"> NEW15</h2>
-                        <p class="text-sm text-gray-600">Coupon Code</p>
+                        <h2 class="text-4xl raleway font-semibold"> NEW15</h2>
+                        <p class="text-sm text-gray-600 raleway">Coupon Code</p>
                     </div>
                 </div>
 
                 <div class="flex  justify-center items-center bg-[#FFC0CB]  text-black w-[500px] text-center rounded-2xl">
-                    <div class="space-y-2">
+                    <div class="space-y-2 inter">
                         <h2 class="text-5xl font-bold">20% OFF</h2>
                         <p class="text-lg">On your next purchase</p>
                         <p class="text-sm text-gray-700">Use by January 2024</p>
@@ -90,13 +99,13 @@
                         <img src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="space-y-2">
-                        <h2 class="text-4xl"> Couple 20</h2>
-                        <p class="text-sm text-gray-600">Coupon Code</p>
+                        <h2 class="text-4xl raleway font-semibold"> Couple 20</h2>
+                        <p class="text-sm text-gray-600 raleway" >Coupon Code</p>
                     </div>
                 </div>
             </section>
             <div class="mx-auto flex justify-center items-center m-6">
-                <button class="btn btn-outline btn-warning">See All offers</button>
+                <button class="btn btn-outline btn-warning raleway">See All offers</button>
             </div>
             <!-- -----------------------Offer section end---------------------------->
         </div>
@@ -105,8 +114,8 @@
             <!-- form section starts -->
             <section > 
                 <div class="headings  mb-8 space-y-2">
-                    <h3 class="text-4xl text-center font-bold">P.H Paribahan</h3>
-                    <p class="text-lg text-gray-500 w-3/4 mx-auto text-center">Unlock the convenience of instant ticketing, ensuring every journey begins with ease and excitement, only with our bus ticketing app.</p>
+                    <h3 class="text-4xl text-center font-bold raleway">P.H Paribahan</h3>
+                    <p class="text-lg text-gray-500 w-3/4 mx-auto inter text-center">Unlock the convenience of instant ticketing, ensuring every journey begins with ease and excitement, only with our bus ticketing app.</p>
                 </div> 
                 <div class="flex flex-col md:flex-row justify-center items-center mx-28 bg-white  text-black text-center rounded-2xl">
                         <!-- form starts -->
@@ -119,17 +128,17 @@
                                         <img src="images/bus-logo.png" alt="">
                                     </div>
                                     <div class="text-start">
-                                        <h3 class="text-4xl">Greenline Paribahan</h3>
-                                        <h3 class="text-lg text-gray-500 ml-">Coach-009-WEB ! AC_Business</h3>
+                                        <h3 class="text-4xl raleway font-semibold">Greenline Paribahan</h3>
+                                        <h3 class="text-sm inter text-gray-500 ml-">Coach-009-WEB ! AC_Business</h3>
                                     </div>
                                 </div>
                                 
                                 <div>
-                                    <button id="btn-seats-left" class="btn bg-amber-200 text-amber-500">
+                                    <button id="btn-seats-left" class="btn bg-amber-200 text-amber-500 inter">
                                         <div>
                                             <img src="images/seat-green.png" alt="">
                                         </div>
-                                        <span id="cnt-left-seats">40</span> Seats Left
+                                        <p><span id="cnt-left-seats">40</span> Seats Left</p>
                                     </button>
                                 </div>
                             </div>
@@ -137,17 +146,17 @@
     
                             <div class="w-full space-y-4 bg-gray-50 p-4 rounded-2xl m-4">
                                 <div class="flex justify-between items-center">
-                                    <p class="text-sm text-gray-600">Route</p>
-                                    <p class="text-sm text-gray-600">Dhaka - Sylhet</p>
+                                    <p class="text-sm text-gray-600 raleway">Route</p>
+                                    <p class="text-sm text-gray-600 raleway">Dhaka - Sylhet</p>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <p class="text-sm text-gray-600">Departure Time</p>
-                                    <p class="text-sm text-gray-600">9.00PM</p>
+                                    <p class="text-sm text-gray-600 raleway">Departure Time</p>
+                                    <p class="text-sm text-gray-600 raleway">9.00PM</p>
                                 </div>
                                 <div>
-                                    <button class="btn mr-4 text-gray-600">Boarding Point - Laxmipur</button>
-                                    <button class="btn mr-4 text-gray-600">Dropping Point - Bogura</button>
-                                    <button class="btn mr-4 text-gray-600">Est. Time - 11 hour</button>
+                                    <button class="btn mr-4 text-gray-600 inter">Boarding Point - Laxmipur</button>
+                                    <button class="btn mr-4 text-gray-600 inter">Dropping Point - Bogura</button>
+                                    <button class="btn mr-4 text-gray-600 inter">Est. Time - 11 hour</button>
                                 </div>
                             </div>
                         </div>
@@ -160,8 +169,8 @@
                         </div>
                         <div class="space-y-2 p-10 text-center">
                             <div class="text-center ml-10"><img src="images/fare.png" alt=""></div>
-                            <h2 class="text-3xl font-bold mr-1">550 Taka</h2>
-                            <h3 class="text-2xl text-gray-600 mr-1">Per seat</h3> 
+                            <h2 class="text-3xl font-bold mr-1 raleway">550 Taka</h2>
+                            <h3 class="text-xl inter text-gray-600 mr-1">Per seat</h3> 
                         </div>
                         <!-- per seat cost ends -->
                 </div>
@@ -173,9 +182,9 @@
             <div class="heaidngs">
                 <div class="space-y-2">
                     <div class=""> 
-                        <h3 class="text-3xl font-bold">Select Your Seat</h3>
+                        <h3 class="text-3xl font-bold raleway">Select Your Seat</h3>
                     </div>
-                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center"> 
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center inter"> 
                         <div class="flex justify-center items-center gap-2">
                             <div>
                                 <img src="images/seat-gray.png" alt="">
@@ -192,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <section class="mt-8 flex justify-between flex-col md:flex-row">
+            <section class="mt-8 flex justify-between flex-col md:flex-row inter">
                 <!-- ticket selection starts-->
                 <div class="w-full md:w-[500px]  flex flex-col gap-4 justify-around items-center md:justify-between ">
                     <div class="flex items-center  ml-2 gap-6">
@@ -400,7 +409,7 @@
                             </div>
                             <div id="coupon-field" class="px-2 bg-white py-2 rounded-lg flex">
                                 <input id="coupone-input" type="text" placeholder="Have any coupon?" class="input w-3/4" disabled/>
-                                <button id="btn-apply-coupon" onclick="couponeApply()" class="btn bg-green-500 text-white font-semibold w-24 " disabled>Apply</button>
+                                <button id="btn-apply-coupon" onclick="couponeApply()" class="btn bg-green-500 text-white font-semibold w-24 raleway" disabled>Apply</button>
                             </div>
                             <di id="disc-price" class="flex justify-between px-5 items-center my-2 hidden">
                                 <div class="flex gap-1 items-center">
@@ -420,7 +429,7 @@
                 <!-- ticket confirmation ends-->
 
                 <!-- passenger form starts -->
-                <div class="space-y-4">
+                <div class="space-y-4 inter">
                     <div class="space-y-2">
                         <p class="font-semibold">Passenger Name*</p>
                         <input id="passenger-name"  type="text" placeholder="Enter your name" class="input input-bordered w-full " required />
@@ -434,7 +443,7 @@
                         <input id="passenger-email" type="email" placeholder="Enter your Email" class="input input-bordered w-full" />
                     </div>
                     <div class="space-y-2">
-                        <button id="btn-next" onclick="successful()" class="btn w-full bg-green-500 text-white font-bold text-lg" disabled>Next</button>
+                        <button id="btn-next" onclick="successful()" class="btn w-full bg-green-500 text-white font-bold text-lg raleway" disabled>Next</button>
                     </div>
                     <div class="flex underline justify-between items-center px-4 text-gray-500">
                         <p><a href="#">Terms and conditions</a></p>
@@ -456,11 +465,11 @@
      </div>
 
      <!-- footer starts -->
-     <footer>
+     <footer >
         <div>
-            <footer class="footer p-10 bg-base-200 text-base-content bg-black text-gray-300 border-b border-gray-600 border-dashed">
+            <footer class="footer inter p-10 bg-base-200 text-base-content bg-black text-gray-300 border-b border-gray-600 border-dashed">
                 <aside class="space-y-2">
-                    <h2 class="text-3xl font-semibold">P-Ticket</h2>
+                    <h2 class="text-3xl font-semibold raleway">P-Ticket</h2>
                     <p class="w-3/4">P-Ticket is a digital platform to make your daily commuting better</p>
                 </aside> 
                 
@@ -517,7 +526,7 @@
                 Shortly you will find a confirmation in your email.
             </p>
 
-            <button id="btn-continue" class="btn w-40 bg-green-700 rounded-full text-white">Continue</button>
+            <button onclick="gotoLandingPage()" id="btn-continue" class="btn w-40 bg-green-700 rounded-full text-white">Continue</button>
         </div>
     </div>
 
