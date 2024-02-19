@@ -25,7 +25,7 @@
 
             <header>
                 <!-- navbar section start -->
-            <div class="navbar bg-base-100 my-4">
+            <div class="navbar bg-base-100 my-4 ">
                 <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@
                     <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-4xl font-extrabold raleway">P-ticket</a>
+                <a class="btn btn-ghost md:text-4xl font-extrabold raleway">P-ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-gray-600 font-semibold">
@@ -48,7 +48,7 @@
                     <li class="raleway"><a>Search</a></li>
                 </ul>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-en">
                 <a class="btn text-amber-500 bg-amber-50 border border-amber-200 raleway">Bus <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
@@ -69,60 +69,63 @@
             <!------------------------- header section end ------------------------->
 
             <!-- -----------------------Offer section start---------------------------->
-            <div class="headings  mb-8 ">
-                <h3 class="text-4xl text-center font-bold my-8 raleway">Best offers for you</h3>
-            </div>
-            <section class="flex flex-col md:flex-row gap-4 justify-evenly">
-                
-                <div class="flex mx-10 px-10  justify-center items-center bg-amber-400  text-black w-[500px] text-center rounded-2xl">
-                    <div class="space-y-2">
-                        <h2 class="text-5xl font-bold inter">15% OFF</h2>
-                        <p class="text-lg inter">On your next purchase</p>
-                        <p class="text-sm text-gray-700 inter">Use by January 2024</p>
-                    </div>
-                    <div class="">
-                        <img src="images/cupon-devider.png" alt="">
-                    </div>
-                    <div class="space-y-2">
-                        <h2 class="text-4xl raleway font-semibold"> NEW15</h2>
-                        <p class="text-sm text-gray-600 raleway">Coupon Code</p>
-                    </div>
+            <section>
+                <div class="headings  mb-8 ">
+                    <h3 class="md:text-4xl text-center font-bold my-8 raleway">Best offers for you</h3>
                 </div>
-
-                <div class="flex  justify-center items-center bg-[#FFC0CB]  text-black w-[500px] text-center rounded-2xl">
-                    <div class="space-y-2 inter">
-                        <h2 class="text-5xl font-bold">20% OFF</h2>
-                        <p class="text-lg">On your next purchase</p>
-                        <p class="text-sm text-gray-700">Use by January 2024</p>
+                <section class="flex flex-col md:flex-row gap-4 justify-evenly">
+                    
+                    <div class="flex mx-10 px-10 py-10 md:py-0 flex-col md:flex-row justify-center items-center bg-amber-400  text-black md:w-[500px] text-center rounded-2xl">
+                        <div class="space-y-2">
+                            <h2 class="text-5xl font-bold inter">15% OFF</h2>
+                            <p class="text-lg inter">On your next purchase</p>
+                            <p class="text-sm text-gray-700 inter">Use by January 2024</p>
+                        </div>
+                        <div class="">
+                            <img src="images/cupon-devider.png" class="h-0 md:h-full" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h2 class="text-4xl raleway font-semibold"> NEW15</h2>
+                            <p class="text-sm text-gray-600 raleway">Coupon Code</p>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="images/cupon-devider.png" alt="">
+    
+                    <div class="flex mx-10 px-10 py-10 md:py-0 flex-col md:flex-row justify-center items-center bg-[#FFC0CB]  text-black md:w-[500px] text-center rounded-2xl">
+                        <div class="space-y-2 inter">
+                            <h2 class="text-5xl font-bold">20% OFF</h2>
+                            <p class="text-lg">On your next purchase</p>
+                            <p class="text-sm text-gray-700">Use by January 2024</p>
+                        </div>
+                        <div class="">
+                            <img src="images/cupon-devider.png" class="h-0 md:h-full" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h2 class="text-4xl raleway font-semibold"> Couple 20</h2>
+                            <p class="text-sm text-gray-600 raleway" >Coupon Code</p>
+                        </div>
                     </div>
-                    <div class="space-y-2">
-                        <h2 class="text-4xl raleway font-semibold"> Couple 20</h2>
-                        <p class="text-sm text-gray-600 raleway" >Coupon Code</p>
-                    </div>
+                </section>
+                <div class="mx-auto flex justify-center items-center m-6">
+                    <button class="btn btn-outline btn-warning raleway">See All offers</button>
                 </div>
             </section>
-            <div class="mx-auto flex justify-center items-center m-6">
-                <button class="btn btn-outline btn-warning raleway">See All offers</button>
-            </div>
             <!-- -----------------------Offer section end---------------------------->
         </div>
 
-        <div id="ticket-buy-section" class="container-2 p-10 border-t bg-gray-50 border-yellow-400 rounded-2xl mx-10">
+
+        <div id="ticket-buy-section" class="container-2 md:p-10 border-t md:bg-gray-50 border-yellow-400 rounded-2xl mx-10">
             <!-- form section starts -->
             <section > 
                 <div class="headings  mb-8 space-y-2">
                     <h3 class="text-4xl text-center font-bold raleway">P.H Paribahan</h3>
                     <p class="text-lg text-gray-500 w-3/4 mx-auto inter text-center">Unlock the convenience of instant ticketing, ensuring every journey begins with ease and excitement, only with our bus ticketing app.</p>
                 </div> 
-                <div class="flex flex-col md:flex-row justify-center items-center mx-28 bg-white  text-black text-center rounded-2xl">
+                <div class="flex flex-col md:flex-row justify-center items-center md:mx-28 md:bg-white  text-black text-center rounded-2xl">
                         <!-- form starts -->
                         
                         <div class="">
                             <!-- form heading starts -->
-                            <div class="flex justify-between items-center ml-4">
+                            <div class="flex flex-col md:flex-row justify-between items-center ml-4">
                                 <div class="flex gap-3 items-center">
                                     <div>
                                         <img src="images/bus-logo.png" alt="">
@@ -144,7 +147,7 @@
                             </div>
                             <!-- form heading ends -->
     
-                            <div class="w-full space-y-4 bg-gray-50 p-4 rounded-2xl m-4">
+                            <div class="w-full space-y-4 md:md:bg-gray-50 p-4 rounded-2xl m-4">
                                 <div class="flex justify-between items-center">
                                     <p class="text-sm text-gray-600 raleway">Route</p>
                                     <p class="text-sm text-gray-600 raleway">Dhaka - Sylhet</p>
@@ -154,9 +157,9 @@
                                     <p class="text-sm text-gray-600 raleway">9.00PM</p>
                                 </div>
                                 <div>
-                                    <button class="btn mr-4 text-gray-600 inter">Boarding Point - Laxmipur</button>
-                                    <button class="btn mr-4 text-gray-600 inter">Dropping Point - Bogura</button>
-                                    <button class="btn mr-4 text-gray-600 inter">Est. Time - 11 hour</button>
+                                    <button class="btn mr-4 my-1 text-gray-600 inter">Boarding Point - Laxmipur</button>
+                                    <button class="btn mr-4 my-1 text-gray-600 inter">Dropping Point - Bogura</button>
+                                    <button class="btn mr-4 my-1 text-gray-600 inter">Est. Time - 11 hour</button>
                                 </div>
                             </div>
                         </div>
@@ -167,9 +170,9 @@
                         <div class="text-center">
                             <img src="images/info-devider.png" class=" h-0 md:h-96" alt="">
                         </div>
-                        <div class="space-y-2 p-10 text-center">
-                            <div class="text-center ml-10"><img src="images/fare.png" alt=""></div>
-                            <h2 class="text-3xl font-bold mr-1 raleway">550 Taka</h2>
+                        <div class="space-y-2 md:p-10 text-center">
+                            <div class="text-center md:ml-10"><img src="images/fare.png" alt=""></div>
+                            <h2 class="md:text-3xl font-bold md:mr-1 raleway ">550 Taka</h2>
                             <h3 class="text-xl inter text-gray-600 mr-1">Per seat</h3> 
                         </div>
                         <!-- per seat cost ends -->
@@ -178,7 +181,7 @@
             <!-- form section ends -->
 
             <!-- ticket buying section starts -->
-        <div class="container-3 p-10 bg-white mt-9 rounded-2xl  mx-28">
+        <div class="container-3 md:p-10 md:bg-white mt-9 rounded-2xl  md:mx-28">
             <div class="heaidngs">
                 <div class="space-y-2">
                     <div class=""> 
@@ -210,12 +213,12 @@
                         </div>
                         <div class="flex gap-10">
                             <div class="flex gap-4">
-                                <button class="btn w-20 invisible" onclick="" id="btn-selector">K1</button>
-                                <button class="btn w-20 invisible" onclick="" id="btn-selector">K2</button>
+                                <button class="btn w-10 md:w-16 invisible" onclick="" id="btn-selector">K1</button>
+                                <button class="btn w-10 md:w-16 invisible" onclick="" id="btn-selector">K2</button>
                             </div>
                             <div class="flex gap-4">
-                                <button class="btn w-20 invisible" onclick="" id="btn-selector">K3</button>
-                                <button class="btn w-20 bg-gray-300" onclick="" id="btn-selector">
+                                <button class="btn w-10 md:w-16 invisible" onclick="" id="btn-selector">K3</button>
+                                <button class="btn w-10 md:w-16 bg-gray-300" onclick="" id="btn-selector">
                                     <img src="images/tabler-icon-steering-wheel.png" alt="">
                                 </button>
                             </div>
@@ -227,12 +230,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-1">A1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-2">A2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-1">A1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-2">A2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-3">A3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-4">A4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-3">A3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-4">A4</button>
                                 </div>
                             </div>
                         </div>
@@ -242,12 +245,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-5">B1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-6">B2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-5">B1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-6">B2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-7">B3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-8">B4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-7">B3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-8">B4</button>
                                 </div>
                             </div>
                         </div>
@@ -257,12 +260,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-9">C1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-10">C2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-9">C1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-10">C2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-11">C3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-12">C4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-11">C3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-12">C4</button>
                                 </div>
                             </div>
                         </div>
@@ -272,12 +275,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-13">D1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-14">D2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-13">D1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-14">D2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-15">D3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-16">D4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-15">D3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-16">D4</button>
                                 </div>
                             </div>
                         </div>
@@ -287,12 +290,12 @@
                             </div>
                             <div class="flex gap-10 ml-1">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-17">E1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-18">E2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-17">E1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-18">E2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-19">E3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-20">E4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-19">E3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-20">E4</button>
                                 </div>
                             </div>
                         </div>
@@ -302,12 +305,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-21">F1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-22">F2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-21">F1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-22">F2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-23">F3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-24">F4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-23">F3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-24">F4</button>
                                 </div>
                             </div>
                         </div>
@@ -317,12 +320,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-25">G1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-26">G2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-25">G1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-26">G2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-27">G3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-28">G4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-27">G3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-28">G4</button>
                                 </div>
                             </div>
                         </div>
@@ -332,12 +335,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-29">H1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-30">H2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-29">H1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-30">H2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-31">H3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-32">H4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-31">H3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-32">H4</button>
                                 </div>
                             </div>
                         </div>
@@ -347,12 +350,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-33">I1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-34">I2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-33">I1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-34">I2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-35">I3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-36">I4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-35">I3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-36">I4</button>
                                 </div>
                             </div>
                         </div>
@@ -362,12 +365,12 @@
                             </div>
                             <div class="flex gap-10">
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-37">J1</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-38">J2</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-37">J1</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-38">J2</button>
                                 </div>
                                 <div class="flex gap-4">
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-39">J3</button>
-                                    <button class="btn w-20 text-gray-500" onclick="selectTicket(this)" id="btn-selector-40">J4</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-39">J3</button>
+                                    <button class="btn w-10 md:w-16 text-gray-500" onclick="selectTicket(this)" id="btn-selector-40">J4</button>
                                 </div>
                             </div>
                         </div>
@@ -377,8 +380,8 @@
 
                 <div class="">
                     <!-- ticket confirmation start-->
-                    <div class="rounded-2xl  w-1/2 mx-auto md:w-full">
-                        <div class="p-8 mb-8 bg-gray-50 rounded-md">
+                    <div class="rounded-2xl   mx-auto md:w-full">
+                        <div class="md:p-8 mb-8 md:bg-gray-50 rounded-md">
                             <div class="flex justify-around items-center text-center mb-4">
                                 <div class="flex gap-1 justify-center items-center ">
                                     <p class="text-lg font-semibold">Seat </p>
@@ -407,7 +410,7 @@
                                 </div>
                                 <p class="text-lg font-semibold">BDT <span id="total-price" >00</span></p>
                             </div>
-                            <div id="coupon-field" class="px-2 bg-white py-2 rounded-lg flex">
+                            <div id="coupon-field" class="px-2 md:bg-white py-2 rounded-lg flex">
                                 <input id="coupone-input" type="text" placeholder="Have any coupon?" class="input w-3/4" disabled/>
                                 <button id="btn-apply-coupon" onclick="couponeApply()" class="btn bg-green-500 text-white font-semibold w-24 raleway" disabled>Apply</button>
                             </div>
@@ -465,15 +468,15 @@
      </div>
 
      <!-- footer starts -->
-     <footer >
+     <footer class="mt-6">
         <div>
-            <footer class="footer inter p-10 bg-base-200 text-base-content bg-black text-gray-300 border-b border-gray-600 border-dashed">
+            <footer class="footer flex flex-col md:flex-row inter p-10 bg-base-200 text-base-content bg-black text-gray-300 border-b border-gray-600 border-dashed">
                 <aside class="space-y-2">
                     <h2 class="text-3xl font-semibold raleway">P-Ticket</h2>
                     <p class="w-3/4">P-Ticket is a digital platform to make your daily commuting better</p>
                 </aside> 
                 
-                <div class="ml-64">
+                <div class="md:ml-96">
                     <p class="text-lg font-semibold text-gray-300">Download our app</p>
                     <div class="flex gap-3 border-2 border-white p-2 rounded-lg">
                         <div>
@@ -511,7 +514,7 @@
     </div>
 
     <div id="successful-section" class="my-20 flex justify-center items-center hidden">
-        <div class="space-y-2 flex justify-center items-center flex-col  p-8 rounded-2xl bg-gray-50">
+        <div class="space-y-2 flex justify-center items-center flex-col  p-8 rounded-2xl md:bg-gray-50">
             <div>
                 <img src="images/success.png" alt="">
             </div>
@@ -535,7 +538,7 @@
      --------------------------->
 
      <div id="alertContainer" class="hidden fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50">
-        <div class="bg-white p-4 rounded shadow-md">
+        <div class="md:bg-white p-4 rounded shadow-md">
             <p class="text-lg font-semibold mb-2">OPPS!</p>
             <p id="alert-msg"></p>
             <button id="closeAlertBtn" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Close</button>
